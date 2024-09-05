@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ad Stylistin bietet professionelle Haarstyling-Dienstleistungen in Pottenbrunn. Besuchen Sie uns für exklusive Styling-Erfahrungen.">
+    <meta name="keywords" content="Haarstyling, Friseur, Pottenbrunn, Haarpflege, Haartrends">
+    <title>Ad Stylistin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Firmenlogo"> <!-- Zamenite putanju sa stvarnom putanjom do vašeg loga -->
+            </div>
+            <div class="site-title">
+                <h1>Ad Stylistin</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Start</a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#services">Dienstleistungen</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home">
+        <div class="hero">
+            <img src="salon1.jpg" alt="Haarstyling">
+            <div class="hero-text">
+                <h2 class="black-heading">Willkommen bei Ad Stylistin</h2>
+                <p>Wo Schönheit und Stil aufeinandertreffen.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="black-heading">Über uns</h2>
+            <p>Wir sind ein führendes Haarstyling-Studio, das eine Vielzahl von Dienstleistungen anbietet, um Ihr Aussehen zu verbessern.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="black-heading">Unsere Dienstleistungen</h2>
+            <div class="gallery">
+                <div class="service">
+                    <img src="s6.jpg" alt="Dienstleistung 1">
+                    <h3>Dienstleistung 1</h3>
+                    <p>Beschreibung der Dienstleistung 1.</p>
+                </div>
+                <div class="service">
+                    <img src="s5.jpg" alt="Dienstleistung 2">
+                    <h3>Dienstleistung 2</h3>
+                    <p>Beschreibung der Dienstleistung 2.</p>
+                </div>
+                <div class="service">
+                    <img src="s3.jpg" alt="Dienstleistung 3">
+                    <h3>Dienstleistung 3</h3>
+                    <p>Beschreibung der Dienstleistung 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <h2>Galerie</h2>
+            <div class="gallery-container">
+                <img src="s2.jpg" alt="Galerie Bild 1">
+                <img src="s6.jpg" alt="Galerie Bild 2">
+                <img src="s3.jpg" alt="Galerie Bild 3">
+            </div>
+        </div>
+    </section>
+    
+    <section id="video">
+        <div class="container">
+            <h2>Unser Video</h2>
+            <div class="video-container">
+                <video controls autoplay muted>
+                    <source src="v1.mp4" type="video/mp4">
+                    Ihr Browser unterstützt dieses Video-Format nicht.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <audio id="background-music">
+        <source src="Stoja - Samo - (Audio 2000).m4a" type="audio/mp3">
+        Ihr Browser unterstützt dieses Audio-Format nicht.
+    </audio>
+    <button onclick="document.getElementById('background-music').play()">Play Music</button>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+<script>
+    function initMap() {
+        var location = { lat: 48.2094, lng: 15.6098 }; // Koordinate za Schönstraße 11, 3140 Pottenbrunn
+        var map = new google.maps.Map(document.getElementById('google-map'), {
+            zoom: 15,
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+</script>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="black-heading">Kontaktieren Sie uns</h2>
+            <p>Adresse: Schönstraße 11, 3140 Pottenbrunn</p>
+            <p>Telefon: +43 (0)676 45 25 000</p>
+            <p>Email: info@ad-stylistin.at</p>
+        </div>
+    </section>
+    
+    
+
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2218.712168089889!2d15.6098!3d48.2094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d063f0489c1a1%3A0xfbe48e8c8e26d38e!2sSchönstraße%2011%2C%203140%20Pottenbrunn%2C%20Österreich!5e0!3m2!1sen!2sde!4v1694157987711!5m2!1sen!2sde"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+</iframe>
+
+    
+
+    
+    
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 INFINTY. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
